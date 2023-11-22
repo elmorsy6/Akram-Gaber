@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  font-size: 10px;
+  /* 1rem by default = 16px */
+  /* 1rem = 10 */
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #212529;
+}
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.container {
+  max-width: 99.2rem;
+  padding: 0 1.2rem;
+  margin: 0 auto;
+}
+*::selection {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f59f00;
+}
